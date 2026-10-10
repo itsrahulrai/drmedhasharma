@@ -1,11 +1,16 @@
-<section class="mb-5">
-    <header>
-        <h2 class="h5 text-dark">
-            {{ __('Profile Information') }}
-        </h2>
-        <p class="text-muted small mt-1">
-            {{ __("Update your account's profile information and email address.") }}
-        </p>
+<section>
+    <header class="d-flex align-items-center gap-2 mb-3 pb-2 border-bottom">
+        <div class="rounded-3 bg-primary bg-opacity-10 text-primary p-2 d-flex align-items-center justify-content-center" style="width: 38px; height: 38px;">
+            <i class="bi bi-person-gear fs-5"></i>
+        </div>
+        <div>
+            <h5 class="fw-bold text-dark mb-0">
+                {{ __('Profile Information') }}
+            </h5>
+            <p class="text-muted small mb-0">
+                {{ __("Update your account's profile name and email address.") }}
+            </p>
+        </div>
     </header>
 
     <!-- Email Verification Form -->

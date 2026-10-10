@@ -40,9 +40,10 @@ class BlogController extends Controller
         ]);
 
 
-        $imagePath = null;
+        $imageName = null;
         if ($request->hasFile('image')) {
-            $imagePath = $request->file('image')->store('blogs', 'public');
+            $imageName = time() . '_' . uniqid() . '.' . $request->file('image')->getClientOriginalExtension();
+            $request->file('image')->move(public_path('uploads/blogs'), $imageName);
         }
 
         Blog::create([
@@ -50,7 +51,7 @@ class BlogController extends Controller
             'slug'             => $request->slug ? Str::slug($request->slug) : Str::slug($request->title),
             'category_id'      => $request->category_id,
             'content'          => $request->content,
-            'image'            => $imagePath,
+            'image'            => $imageName,
             'meta_title'       => $request->meta_title,
             'meta_description' => $request->meta_description,
             'canonical_url'    => $request->canonical_url,
@@ -63,11 +64,7 @@ class BlogController extends Controller
 
     public function edit($id)
     {
-
-
         $blog = Blog::findOrFail($id);
-        //  dd($blog);
-        // exit;
         $blogs = Blog::with('category')->latest()->get();
         $categories = Category::all();
         return view('profile.blog.add-blog', compact('blog', 'blogs', 'categories'));
@@ -88,18 +85,17 @@ class BlogController extends Controller
             'status'           => 'required|boolean',
         ]);
 
-            $imagePath = $blog->image;
+        $imagePath = $blog->image;
 
-            if ($request->hasFile('image')) {
-                // Purani image delete karein (agar ho to)
-                if ($blog->image && file_exists(public_path('uploads/blogs/' . $blog->image))) {
-                    unlink(public_path('uploads/blogs/' . $blog->image));
-                }
-                $imageName = time() . '_' . uniqid() . '.' . $request->file('image')->getClientOriginalExtension();
-                $request->file('image')->move(public_path('uploads/blogs'), $imageName);
-                $imagePath = $imageName;
+        if ($request->hasFile('image')) {
+            // Purani image delete karein (agar ho to)
+            if ($blog->image && file_exists(public_path('uploads/blogs/' . $blog->image))) {
+                unlink(public_path('uploads/blogs/' . $blog->image));
             }
-
+            $imageName = time() . '_' . uniqid() . '.' . $request->file('image')->getClientOriginalExtension();
+            $request->file('image')->move(public_path('uploads/blogs'), $imageName);
+            $imagePath = $imageName;
+        }
 
         $blog->update([
             'title'            => $request->title,
@@ -119,7 +115,9 @@ class BlogController extends Controller
 
     public function destroy(Blog $blog)
     {
-        if ($blog->image && Storage::disk('public')->exists($blog->image)) {
+        if ($blog->image && file_exists(public_path('uploads/blogs/' . $blog->image))) {
+            unlink(public_path('uploads/blogs/' . $blog->image));
+        } elseif ($blog->image && Storage::disk('public')->exists($blog->image)) {
             Storage::disk('public')->delete($blog->image);
         }
 

@@ -1,16 +1,132 @@
-  /* Sidebar link normal */
-  .sidebar .nav-link {
-      color: #333;
-      transition: background-color 0.3s, color 0.3s;
-  }
+/* Admin Dashboard Modern Styling - Vision 4 Children Theme */
+:root {
+    --admin-primary: #3498db;          /* Sky / Cyan Blue from 'V' and 'O' */
+    --admin-primary-dark: #2980b9;
+    --admin-red: #e74c3c;              /* Vibrant Red from 'i', 'i', 'n', '4' */
+    --admin-yellow: #f1c40f;           /* Warm Yellow/Gold from 's' & glasses */
+    --admin-navy: #2c3e50;             /* Dark Navy Blue from 'CHILDREN' text */
+    --admin-teal: #1abc9c;
+    --admin-dark: #2c3e50;
+    --admin-sidebar-bg: #ffffff;
+    --admin-body-bg: #f8fafc;
+    --admin-border: #e2e8f0;
+}
 
-  /* On hover */
-  .sidebar .nav-link:hover {
-      background-color: #1DB9AF;
-      color: white !important;
-  }
+body {
+    background-color: var(--admin-body-bg);
+    color: #334155;
+    font-family: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, sans-serif;
+    letter-spacing: -0.01em;
+}
 
-  .sidebar .nav-link.active {
-      background-color: #223645;
-      color: white !important;
-  }
+/* Sidebar Styling */
+.sidebar {
+    background-color: var(--admin-sidebar-bg);
+    border-right: 1px solid var(--admin-border);
+    transition: all 0.3s ease;
+}
+
+@media (min-width: 768px) {
+    .sidebar {
+        position: sticky !important;
+        top: 64px !important;
+        height: calc(100vh - 64px) !important;
+        max-height: calc(100vh - 64px) !important;
+        overflow-y: auto !important;
+        z-index: 1000;
+    }
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 5px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+}
+
+.sidebar-heading {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #94a3b8;
+    padding: 0.5rem 0.85rem 0.25rem;
+    margin-top: 0.75rem;
+}
+
+.sidebar .nav-link {
+    font-size: 0.92rem;
+    font-weight: 500;
+    color: #475569;
+    padding: 0.65rem 0.9rem;
+    border-radius: 10px;
+    margin-bottom: 2px;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.sidebar .nav-link i {
+    font-size: 1.15rem;
+    width: 20px;
+    text-align: center;
+    color: #64748b;
+    transition: color 0.2s ease;
+}
+
+.sidebar .nav-link:hover {
+    background-color: #f0f7ff;
+    color: #2563eb;
+}
+
+.sidebar .nav-link:hover i {
+    color: #2563eb;
+}
+
+.sidebar .nav-link.active {
+    background: linear-gradient(135deg, #2b6cb0 0%, #1e3a8a 100%);
+    color: #ffffff !important;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(43, 108, 176, 0.25);
+}
+
+.sidebar .nav-link.active i {
+    color: #ffffff !important;
+}
+
+/* Navbar Styling */
+.admin-navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid var(--admin-border);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+    min-height: 64px;
+}
+
+.user-avatar-circle {
+    width: 36px;
+    height: 36px;
+    background: linear-gradient(135deg, #e74c3c 0%, #f39c12 100%);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+/* Card Enhancements */
+.card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    box-shadow: 0 8px 24px rgba(149, 157, 165, 0.12) !important;
+}

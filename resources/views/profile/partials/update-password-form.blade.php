@@ -1,11 +1,16 @@
-<section class="mb-5">
-    <header>
-        <h2 class="h5 text-dark">
-            {{ __('Update Password') }}
-        </h2>
-        <p class="text-muted small mt-1">
-            {{ __('Ensure your account is using a long, random password to stay secure.') }}
-        </p>
+<section>
+    <header class="d-flex align-items-center gap-2 mb-3 pb-2 border-bottom">
+        <div class="rounded-3 bg-success bg-opacity-10 text-success p-2 d-flex align-items-center justify-content-center" style="width: 38px; height: 38px;">
+            <i class="bi bi-shield-lock fs-5"></i>
+        </div>
+        <div>
+            <h5 class="fw-bold text-dark mb-0">
+                {{ __('Update Password') }}
+            </h5>
+            <p class="text-muted small mb-0">
+                {{ __('Ensure your account is using a strong password to stay secure.') }}
+            </p>
+        </div>
     </header>
 
     <form method="POST" action="{{ route('password.update') }}" class="mt-4">

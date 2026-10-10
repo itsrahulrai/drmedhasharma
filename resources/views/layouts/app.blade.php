@@ -6,11 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="csrf-token" content="{{ csrf_token() }}" />
 
-    <title>{{ config('app.name', 'Dashboard Login | Dr Medha Sharma') }}</title>
+    @php
+        $currentTitle = $title ?? null;
+        if (!$currentTitle) {
+            if (request()->routeIs('dashboard')) {
+                $currentTitle = 'Dashboard';
+            } elseif (request()->routeIs('categories.create')) {
+                $currentTitle = 'Add Category';
+            } elseif (request()->routeIs('categories.edit')) {
+                $currentTitle = 'Edit Category';
+            } elseif (request()->routeIs('categories.index')) {
+                $currentTitle = 'All Categories';
+            } elseif (request()->routeIs('admin.blogs.create')) {
+                $currentTitle = 'Add Blog';
+            } elseif (request()->routeIs('admin.blogs.edit')) {
+                $currentTitle = 'Edit Blog';
+            } elseif (request()->routeIs('admin.blogs.index')) {
+                $currentTitle = 'All Blogs';
+            } elseif (request()->routeIs('admin.product.bookings*')) {
+                $currentTitle = 'All Bookings';
+            } elseif (request()->routeIs('admin.contacts*')) {
+                $currentTitle = 'Contact Messages';
+            } elseif (request()->routeIs('profile.*')) {
+                $currentTitle = 'Admin Profile';
+            } else {
+                $currentTitle = 'Admin Panel';
+            }
+        }
+    @endphp
+    <title>{{ $currentTitle }} | Dr. Medha Sharma</title>
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.bunny.net" />
-    <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+    <!-- Modern Fonts: Plus Jakarta Sans & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="icon" href="{{ static_asset('front-assets/assets/img/home1/favicon.png') }}" type="image/gif"
         sizes="20x20" />
@@ -32,7 +61,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body style="font-family: 'Figtree', sans-serif;">
+<body style="font-family: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;">
     <div class="min-vh-100 bg-light"> {{-- Bootstrap light background for main container --}}
         @include('layouts.navigation')
 
@@ -116,21 +145,25 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-                    let nameInput = document.getElementById('name');
-                    let slugInput = document.getElementById('slug');
+            const nameInput = document.getElementById('name') || document.getElementById('title');
+            const slugInput = document.getElementById('slug');
 
-                    nameInput.addEventListener('keyup', function() {
+            if (nameInput && slugInput) {
+                nameInput.addEventListener('keyup', function() {
+                    if (!slugInput.dataset.edited) {
+                        slugInput.value = this.value
+                            .toLowerCase()
+                            .replace(/[^a-z0-9\s-]/g, '')
+                            .trim()
+                            .replace(/\s+/g, '-');
+                    }
+                });
 
-                            if (!slugInput.dataset.edited) {
-                                slugInput.value = this.value
-                                    .toLowerCase()
-                                    .replace(/[^a-z0-9\s-]/g, '')
-                                    .trim()
-                                    .replace(/\s+/g, '-');
-                            }); slugInput.addEventListener('input', function() {
-                            this.dataset.edited = true;
-                        });
-                    });
+                slugInput.addEventListener('input', function() {
+                    this.dataset.edited = true;
+                });
+            }
+        });
     </script>
 
 

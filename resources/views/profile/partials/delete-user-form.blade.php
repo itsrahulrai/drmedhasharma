@@ -1,11 +1,16 @@
-<section class="mb-5">
-    <header>
-        <h2 class="h5 text-dark">
-            {{ __('Delete Account') }}
-        </h2>
-        <p class="text-muted small mt-1">
-            {{ __('Once your account is deleted, all of its resources and data will be permanently deleted. Before deleting your account, please download any data or information that you wish to retain.') }}
-        </p>
+<section>
+    <header class="d-flex align-items-center gap-2 mb-3 pb-2 border-bottom">
+        <div class="rounded-3 bg-danger bg-opacity-10 text-danger p-2 d-flex align-items-center justify-content-center" style="width: 38px; height: 38px;">
+            <i class="bi bi-exclamation-triangle fs-5"></i>
+        </div>
+        <div>
+            <h5 class="fw-bold text-danger mb-0">
+                {{ __('Danger Zone: Delete Account') }}
+            </h5>
+            <p class="text-muted small mb-0">
+                {{ __('Permanently delete your admin account and associated access.') }}
+            </p>
+        </div>
     </header>
 
     <!-- Trigger Button -->

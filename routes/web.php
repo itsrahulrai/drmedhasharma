@@ -7,6 +7,10 @@ use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\ContactController;
 use App\Http\Controllers\Admin\ProductBookingController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\SitemapController;
+use App\Models\Blog;
+use App\Models\Category;
+use App\Models\Contact;
 use App\Models\ProductBooking;
 
 /*
@@ -123,8 +127,35 @@ Route::get('/blog', [HomeController::class, 'blog'])->name('blog');
 Route::get('/blog/{slug}', [HomeController::class, 'show'])->name('blog.detail');
 Route::get('/category/{slug}', [HomeController::class, 'category'])->name('blog.category');
 
+Route::get('/sitemap.xml', [SitemapController::class, 'index'])->name('sitemap');
+
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    $totalBlogs = Blog::count();
+    $activeBlogs = Blog::where('status', 1)->count();
+    $inactiveBlogs = Blog::where('status', 0)->count();
+
+    $totalCategories = Category::count();
+    $activeCategories = Category::where('status', 1)->count();
+
+    $totalInquiries = ProductBooking::count();
+    $totalContacts = Contact::count();
+
+    $recentBlogs = Blog::with('category')->latest()->take(5)->get();
+    $recentContacts = Contact::latest()->take(5)->get();
+    $recentBookings = ProductBooking::latest()->take(5)->get();
+
+    return view('dashboard', compact(
+        'totalBlogs',
+        'activeBlogs',
+        'inactiveBlogs',
+        'totalCategories',
+        'activeCategories',
+        'totalInquiries',
+        'totalContacts',
+        'recentBlogs',
+        'recentContacts',
+        'recentBookings'
+    ));
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
