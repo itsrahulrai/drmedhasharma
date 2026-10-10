@@ -1,0 +1,53 @@
+public function up(): void
+{
+    Schema::table('users', function (Blueprint $table) {
+        // 'reporting_to' links each employee to their Team Lead
+        $table->foreignId('reporting_to')->nullable()->constrained('users')->onDelete('set null');
+    });
+}
+
+
+
+ALTER TABLE `users`
+ADD COLUMN `reporting_to` BIGINT UNSIGNED NULL AFTER `department_id`,
+ADD CONSTRAINT `users_reporting_to_foreign` FOREIGN KEY (`reporting_to`) REFERENCES `users`(`id`) ON DELETE SET NULL;
+
+
+UPDATE users 
+SET role = 2 
+WHERE id = 48;
+
+
+UPDATE users 
+SET reporting_to = 48 
+WHERE department_id = 2 AND id != 48;
+
+
+ALTER TABLE `users`
+ADD CONSTRAINT `fk_users_created_by`
+FOREIGN KEY (`created_by`) REFERENCES `users`(`id`) ON DELETE SET NULL,
+ADD CONSTRAINT `fk_users_updated_by`
+FOREIGN KEY (`updated_by`) REFERENCES `users`(`id`) ON DELETE SET NULL;
+
+
+ALTER TABLE `users`
+MODIFY `created_by` BIGINT UNSIGNED NULL,
+MODIFY `updated_by` BIGINT UNSIGNED NULL;
+
+
+ALTER TABLE `users`
+ADD CONSTRAINT `fk_users_created_by`
+FOREIGN KEY (`created_by`) REFERENCES `users`(`id`) ON DELETE SET NULL,
+ADD CONSTRAINT `fk_users_updated_by`
+FOREIGN KEY (`updated_by`) REFERENCES `users`(`id`) ON DELETE SET NULL;
+
+
+
+
+
+
+
+
+UPDATE users 
+SET reporting_to = 48 
+WHERE department_id = 2 AND id != 48;

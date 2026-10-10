@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: 
+Sitemap: https://drmedhasharma.com/sitemap.xml

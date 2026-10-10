@@ -1,0 +1,16 @@
+  /* Sidebar link normal */
+  .sidebar .nav-link {
+      color: #333;
+      transition: background-color 0.3s, color 0.3s;
+  }
+
+  /* On hover */
+  .sidebar .nav-link:hover {
+      background-color: #1DB9AF;
+      color: white !important;
+  }
+
+  .sidebar .nav-link.active {
+      background-color: #223645;
+      color: white !important;
+  }
