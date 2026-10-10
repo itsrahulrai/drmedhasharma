@@ -1,15 +1,7 @@
 @extends('frontend.layout.app')
-@section('title', 'Strabismus - Dr Medha Sharma : Eye Specialist Dubai | Paediatric Ophthalmologist')
-@section('meta_description',
-'Consult Dr. Medha Sharma, a leading Eye Specialist and Paediatric Ophthalmologist in
-Dubai. Expert in treating strabismus, lazy eye, cataract, and all pediatric vision disorders with advanced care and
-compassion.')
-@section('meta_keywords',
-'Dr Medha Sharma, Eye Specialist Dubai, Paediatric Ophthalmologist Dubai, Strabismus
-Treatment, Lazy Eye Treatment, Children Eye Doctor Dubai, Pediatric Eye Specialist, Eye Clinic Dubai, Best Eye Doctor
-Dubai')
+@section('title', 'Strabismus Surgery in Dubai | Expert Eye Care | Vision 4 Children')
+@section('meta_description', 'Learn about Strabismus Surgery in Dubai at Vision 4 Children, with expert evaluation, personalised treatment options, and care from Dr. Medha Sharma.')
 @section('meta_robots', 'index, follow')
-@section('canonical', url('https://drmedhasharma.com/strabismus'))
 @section('content')
 
 
@@ -21,7 +13,7 @@ Dubai')
             <div class="col-lg-8">
                 <nav aria-label="breadcrumb">
                     <div class="pq-breadcrumb-title">
-                        <h2> Strabismus Surgery in Dubai</h2>
+                        <h1> Strabismus Surgery in Dubai</h1>
                     </div>
                     <div class="pq-breadcrumb-container">
                         <ol class="breadcrumb">
@@ -46,7 +38,7 @@ Dubai')
            
             <div class="col-xl-8 mt-4 mt-xl-0">
                 <img src="{{ static_asset('front-assets/assets/images/leftsvc.png')}}" class="pq-mb-30 img-fluid" alt="">
-                <h3 class="mb-2">Strabismus Correction and Eye Care in Dubai</h3>
+                <h2 class="mb-2">Strabismus Correction and Eye Care in Dubai</h2>
                 <p style="text-align: justify;">
                     Strabismus, commonly referred to as "crossed eyes," is a condition caused due to misalignment of the visual axes. The problem can lead to a number of visual difficulties, such as reduced contrast sensitivity, poor visual acuity, and entire visual development being stalled. Thus, medical help at the earliest point is very advantageous as it can prevent future complications besides supporting the child's vision development. Dr. Medha Sharma, a reputable pediatric eye doctor who also offers <strong>strabismus surgery in Dubai,</strong> is a pioneer in the use of the latest diagnostic methods, skillful in designing the therapy, and a joy to work with when treating children. The objective is to move the eyes to their normal positions, improve their collaboration in seeing, and make the outcomes last for a long time. 
                 </p>

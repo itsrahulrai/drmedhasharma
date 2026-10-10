@@ -8,7 +8,6 @@
     <title>@yield('title') </title>
     <meta name="google-site-verification" content="YeQQIQXP-zhuAyItBbfXWTWujH19OzL2emU8bHOQIKk"/>
     <meta name="description" content="@yield('meta_description')">
-    <meta name="keywords" content="@yield('meta_keywords')">
     <meta name="robots" content="@yield('meta_robots', 'index, follow')">
     <link rel="canonical" href="@yield('canonical', url()->current())">
     <!-- Google tag (gtag.js) -->

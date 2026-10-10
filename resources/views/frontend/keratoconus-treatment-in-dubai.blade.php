@@ -2,10 +2,7 @@
 @section('title', 'Keratoconus Treatment in Dubai | Vision 4 Children')
 @section('meta_description',
 'Looking for keratoconus treatment in Dubai? Dr. Medha Sharma provides early diagnosis, corneal cross-linking, and pediatric keratoconus care at Vision 4 Children.')
-@section('meta_keywords',
-'Eye Specialist, Ophthalmologist, Eye Specialist Doctor, Adult Eye Checkup, Cornea Specialist, Corneal Crosslinking Treatments, Keratoconus Treatment, Amblyopia Treatment, Best Pediatric Ophthalmologist, Lazy Eye Treatment, Strabismus Surgery, Squint Specialist, Eye Specialist for Kids')
 @section('meta_robots', 'index, follow')
-@section('canonical', url('https://drmedhasharma.com/keratoconus-treatment-in-dubai'))
 @section('content')
 
 
@@ -17,7 +14,7 @@
             <div class="col-lg-8">
                 <nav aria-label="breadcrumb">
                     <div class="pq-breadcrumb-title">
-                        <h2>Keratoconus treatment in Dubai</h2>
+                        <h1>Keratoconus treatment in Dubai</h1>
                     </div>
                     <div class="pq-breadcrumb-container">
                         <ol class="breadcrumb">
@@ -42,7 +39,7 @@
 
             <div class="col-xl-8 mt-4 mt-xl-0">
 
-                <h1 class="mb-2">Keratoconus Treatment in Dubai for Your Child's Long-Term Vision</h1>
+                <h2 class="mb-2">Keratoconus Treatment in Dubai for Your Child's Long-Term Vision</h2>
 
                 <p style="text-align: justify;">
                     If your child's glasses prescription keeps changing, or their vision seems blurry no matter how many times you update their lenses, it could be more than a simple refractive error. Keratoconus is a condition where the cornea, the clear dome at the front of the eye, gradually thins and loses its round shape, bulging outward into an irregular cone. It affects how light enters the eye, and in children, it tends to progress faster than most parents expect.

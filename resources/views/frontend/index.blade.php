@@ -1,15 +1,7 @@
 @extends('frontend.layout.app')
-@section('title', 'Dr. Medha Sharma | Eye Specialist & Paediatric Ophthalmologist in Dubai')
-@section('meta_description',
-    'Consult Dr. Medha Sharma, a leading Eye Specialist and Paediatric Ophthalmologist in
-    Dubai. Expert in treating strabismus, lazy eye, cataract, and all pediatric vision disorders with advanced care and
-    compassion.')
-@section('meta_keywords',
-    'Dr. Medha Sharma, Eye Specialist Dubai, Paediatric Ophthalmologist Dubai, Strabismus
-    Treatment, Lazy Eye Treatment, Children\'s Eye Doctor Dubai, Pediatric Eye Specialist, Eye Clinic Dubai, Best Eye Doctor
-    Dubai')
+@section('title', 'Eye Specialist in Dubai | Ophthalmologist in Dubai | Vision 4 Children')
+@section('meta_description', 'Looking for an Eye Specialist in Dubai? Vision 4 Children offers expert care from Dr. Medha Sharma, an experienced Ophthalmologist in Dubai, with trusted care.')
 @section('meta_robots', 'index, follow')
-@section('canonical', url('https://drmedhasharma.com/'))
 @section('content')
 
 <style>
@@ -501,7 +493,9 @@ Doctor have guided us all through the proceedure, this was much needed suregery 
                       <div class="pq-icon-box-content">
     <h5 class="pq-icon-box-title">Email ID</h5>
     <p class="pq-icon-box-description">
+        <!--email_off-->
         <a href="mailto:info@drmedhasharma.com">info@drmedhasharma.com</a>
+        <!--/email_off-->
     </p>
 </div>
                     </div>

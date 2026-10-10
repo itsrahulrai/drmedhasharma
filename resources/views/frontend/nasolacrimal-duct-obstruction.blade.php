@@ -1,15 +1,7 @@
 @extends('frontend.layout.app')
-@section('title', 'Nasolacrimal Duct Obstruction - Dr Medha Sharma : Eye Specialist Dubai | Paediatric Ophthalmologist')
-@section('meta_description',
-    'Consult Dr. Medha Sharma, a leading Eye Specialist and Paediatric Ophthalmologist in
-    Dubai. Expert in treating strabismus, lazy eye, cataract, and all pediatric vision disorders with advanced care and
-    compassion.')
-@section('meta_keywords',
-    'Dr Medha Sharma, Eye Specialist Dubai, Paediatric Ophthalmologist Dubai, Strabismus
-    Treatment, Lazy Eye Treatment, Children Eye Doctor Dubai, Pediatric Eye Specialist, Eye Clinic Dubai, Best Eye Doctor
-    Dubai')
+@section('title', 'Nasolacrimal Duct Obstruction | Causes & Treatment | Vision 4 Children')
+@section('meta_description', 'Learn about Nasolacrimal Duct Obstruction, including symptoms, causes, diagnosis, and treatment options with expert guidance from Dr. Medha Sharma.')
 @section('meta_robots', 'index, follow')
-@section('canonical', url('https://drmedhasharma.com/'))
 @section('content')
 
 

@@ -33,6 +33,14 @@ class HomeController extends Controller
         return view('frontend.blog-detials', compact('blog', 'recentBlogs', 'categories'));
     }
 
+    public function category($slug)
+    {
+        $category = Category::where('slug', $slug)->firstOrFail();
+        $blogs = Blog::with('category')->where('category_id', $category->id)->latest()->paginate(6);
+        $categories = Category::withCount('blogs')->get();
+        return view('frontend.blog', compact('blogs', 'categories', 'category'));
+    }
+
     public function submitContact(Request $request)
     {
         $validated = $request->validate([

@@ -2,10 +2,7 @@
 @section('title', 'Amblyopia Treatment in Dubai | Dr. Medha Sharma')
 @section('meta_description',
 'Get expert amblyopia treatment in Dubai with Dr. Medha Sharma. Early diagnosis and personalised lazy eye treatment for healthy vision development in children.')
-@section('meta_keywords',
-'Eye Specialist, Ophthalmologist, Eye Specialist Doctor, Adult Eye Checkup, Cornea Specialist, Corneal Crosslinking Treatments, Keratoconus Treatment, Amblyopia Treatment, Best Pediatric Ophthalmologist, Lazy Eye Treatment, Strabismus Surgery, Squint Specialist, Eye Specialist for Kids')
 @section('meta_robots', 'index, follow')
-@section('canonical', url('https://drmedhasharma.com/amblyopia-treatment-in-dubai'))
 @section('content')
 
 
@@ -17,7 +14,7 @@
             <div class="col-lg-8">
                 <nav aria-label="breadcrumb">
                     <div class="pq-breadcrumb-title">
-                        <h2>Amblyopia Treatment in Dubai</h2>
+                        <h1>Amblyopia Treatment in Dubai</h1>
                     </div>
                     <div class="pq-breadcrumb-container">
                         <ol class="breadcrumb">
@@ -44,7 +41,7 @@
                 <img src="{{ static_asset('front-assets/assets/images/amblyopia-treatment-in-dubai-expert-lazy-eye-specialist.webp') }}" class="pq-mb-30 img-fluid" alt="Amblyopia Treatment in Dubai | Expert Lazy Eye Specialist">
 
 
-                <h1 class="mb-2">Amblyopia Treatment in Dubai | Expert Lazy Eye Specialist</h1>
+                <h2 class="mb-2">Amblyopia Treatment in Dubai | Expert Lazy Eye Specialist</h2>
 
                 <p style="text-align: justify;">
                     Amblyopia, commonly known as lazy eye, is one of the most common vision disorders in children. It develops when one eye does not communicate properly with the brain, causing reduced vision that cannot improve on its own. Early diagnosis is essential because treatment is most effective while a child's visual system is still developing.

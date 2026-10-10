@@ -51,7 +51,7 @@
                                 <tbody>
                                     @forelse($blogs as $key => $blog)
                                         <tr>
-                                            <td>{{ $key + 1 }}</td>
+                                            <td>{{ $blogs->firstItem() ? $blogs->firstItem() + $key : $key + 1 }}</td>
                                             <td>{{ $blog->title }}</td>
                                             <td>{{ $blog->category->name ?? '-' }}</td>
                                             <td>{{ $blog->meta_title }}</td>
@@ -84,6 +84,17 @@
                                     @endforelse
                                 </tbody>
                             </table>
+
+                            @if ($blogs->hasPages())
+                                <div class="d-flex justify-content-between align-items-center mt-3 flex-wrap gap-2">
+                                    <div class="text-muted small">
+                                        Showing {{ $blogs->firstItem() }} to {{ $blogs->lastItem() }} of {{ $blogs->total() }} blogs
+                                    </div>
+                                    <div>
+                                        {{ $blogs->links() }}
+                                    </div>
+                                </div>
+                            @endif
                         </div>
                     </div>
 

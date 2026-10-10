@@ -1,15 +1,7 @@
 @extends('frontend.layout.app')
-@section('title', 'Image Gallery - Dr Medha Sharma : Eye Specialist Dubai | Paediatric Ophthalmologist')
-@section('meta_description',
-    'Consult Dr. Medha Sharma, a leading Eye Specialist and Paediatric Ophthalmologist in
-    Dubai. Expert in treating strabismus, lazy eye, cataract, and all pediatric vision disorders with advanced care and
-    compassion.')
-@section('meta_keywords',
-    'Dr Medha Sharma, Eye Specialist Dubai, Paediatric Ophthalmologist Dubai, Strabismus
-    Treatment, Lazy Eye Treatment, Children Eye Doctor Dubai, Pediatric Eye Specialist, Eye Clinic Dubai, Best Eye Doctor
-    Dubai')
+@section('title', 'Image Gallery | Our Clinic, Team & Facilities | Vision 4 Children')
+@section('meta_description', 'Explore the Vision 4 Children image gallery featuring our clinic, team, facilities, and welcoming environment.')
 @section('meta_robots', 'index, follow')
-@section('canonical', url('https://drmedhasharma.com/'))
 @section('content')
 
 

@@ -2,10 +2,7 @@
 @section('title', 'Eye Specialist for Kids in Dubai | Dr. Medha Sharma')
 @section('meta_description',
 'Looking for an Eye Specialist for Kids in Dubai? Dr. Medha Sharma provides expert pediatric eye care for children with personalised diagnosis and treatment.')
-@section('meta_keywords',
-'Eye Specialist, Ophthalmologist, Eye Specialist Doctor, Adult Eye Checkup, Cornea Specialist, Corneal Crosslinking Treatments, Keratoconus Treatment, Amblyopia Treatment, Best Pediatric Ophthalmologist, Lazy Eye Treatment, Strabismus Surgery, Squint Specialist, Eye Specialist for Kids')
 @section('meta_robots', 'index, follow')
-@section('canonical', url('https://drmedhasharma.com/eye-specialist-for-kids-in-dubai'))
 @section('content')
 
 
@@ -17,7 +14,7 @@
             <div class="col-lg-8">
                 <nav aria-label="breadcrumb">
                     <div class="pq-breadcrumb-title">
-                        <h2>Eye Specialist for kids in Dubai</h2>
+                        <h1>Eye Specialist for kids in Dubai</h1>
                     </div>
                     <div class="pq-breadcrumb-container">
                         <ol class="breadcrumb">
@@ -42,7 +39,7 @@
 
             <div class="col-xl-8 mt-4 mt-xl-0">
 
-                <h1 class="mb-2">Eye Specialist for Kids in Dubai | Compassionate Pediatric Eye Care by Dr. Medha Sharma</h1>
+                <h2 class="mb-2">Eye Specialist for Kids in Dubai | Compassionate Pediatric Eye Care by Dr. Medha Sharma</h2>
 
                 <p style="text-align: justify;">
                     Children often adapt to vision problems without realising something is wrong. Signs like sitting close to screens, avoiding reading, or struggling with focus can sometimes indicate an underlying eye condition. Early eye care helps protect vision and supports a child's learning, confidence, and overall development.

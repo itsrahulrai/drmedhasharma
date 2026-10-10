@@ -2,10 +2,7 @@
 @section('title', 'Squint Specialist Dubai | Strabismus Treatment | Dr. Medha Sharma')
 @section('meta_description',
 'Consult Dr. Medha Sharma, an experienced Squint Specialist in Dubai, for expert diagnosis and personalised strabismus treatment for children and adults.')
-@section('meta_keywords',
-'Eye Specialist, Ophthalmologist, Eye Specialist Doctor, Adult Eye Checkup, Cornea Specialist, Corneal Crosslinking Treatments, Keratoconus Treatment, Amblyopia Treatment, Best Pediatric Ophthalmologist, Lazy Eye Treatment, Strabismus Surgery, Squint Specialist, Eye Specialist for Kids')
 @section('meta_robots', 'index, follow')
-@section('canonical', url('https://drmedhasharma.com/squint-specialist-in-dubai'))
 @section('content')
 
 
@@ -17,7 +14,7 @@
             <div class="col-lg-8">
                 <nav aria-label="breadcrumb">
                     <div class="pq-breadcrumb-title">
-                        <h2>Best Squint Specialist in Dubai </h2>
+                        <h1>Best Squint Specialist in Dubai </h1>
                     </div>
                     <div class="pq-breadcrumb-container">
                         <ol class="breadcrumb">
@@ -43,7 +40,7 @@
             <div class="col-xl-8 mt-4 mt-xl-0">
                 <img src="{{ static_asset('front-assets/assets/images/squint-specialist-in-dubai.webp') }}" class="pq-mb-30 img-fluid" alt="Best Squint Specialist in Dubai">
                 
-                <h1 class="mb-2">Squint Specialist Dubai | Expert Diagnosis &amp; Treatment for Strabismus</h1>
+                <h2 class="mb-2">Squint Specialist Dubai | Expert Diagnosis &amp; Treatment for Strabismus</h2>
 
                 <p style="text-align: justify;">
                     Proper eye alignment is essential for clear vision, depth perception, and comfortable eye coordination. When one or both eyes are not aligned correctly, everyday activities such as reading, driving, or focusing on objects can become challenging. Consulting an experienced <strong>Squint Specialist Dubai</strong> at the earliest stage helps identify the underlying cause and improves the chances of successful treatment.

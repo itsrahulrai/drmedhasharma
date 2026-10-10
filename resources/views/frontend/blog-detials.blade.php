@@ -2,7 +2,6 @@
 
 @section('title', $blog->meta_title ?? $blog->title)
 @section('meta_description', $blog->meta_description ?? Str::limit(strip_tags($blog->content), 160))
-@section('meta_keywords', $blog->meta_keywords ?? ' Dr Medha Sharma : Eye Specialist Dubai | Paediatric Ophthalmologist')
 @section('meta_robots', $blog->robots ?? 'index, follow')
 @section('canonical', $blog->canonical_url ?? url()->current())
 @section('content')
@@ -66,7 +65,7 @@
                         <div class="widget widget_block">
                             <div class="wp-block-group is-layout-constrained">
                                 <div class="wp-block-group__inner-container">
-                                    <h2 class="wp-block-heading">Categories</h2>
+                                    <h3 class="wp-block-heading">Categories</h3>
                                     <ul class="wp-block-categories-list wp-block-categories">
                                         @foreach ($categories as $category)
                                         <li class="cat-item cat-item-43">

@@ -2,10 +2,7 @@
 @section('title', 'Adult Eye Checkup in Dubai by Dr. Medha Sharma')
 @section('meta_description',
 'Dr. Medha Sharma offers advanced Adult Eye Checkup in Dubai, providing precise diagnosis, personalized care, and modern treatments for optimal eye health.')
-@section('meta_keywords',
-'Eye Specialist, Ophthalmologist, Eye Specialist Doctor, Adult Eye Checkup, Cornea Specialist, Corneal Crosslinking Treatments, Keratoconus Treatment, Amblyopia Treatment, Best Pediatric Ophthalmologist, Lazy Eye Treatment, Strabismus Surgery, Squint Specialist, Eye Specialist for Kids')
 @section('meta_robots', 'index, follow')
-@section('canonical', url('https://drmedhasharma.com/adult-eye-checkup-in-dubai'))
 @section('content')
 
 
@@ -17,7 +14,7 @@
             <div class="col-lg-8">
                 <nav aria-label="breadcrumb">
                     <div class="pq-breadcrumb-title">
-                        <h2>Adult Eye checkup in Dubai</h2>
+                        <h1>Adult Eye checkup in Dubai</h1>
                     </div>
                     <div class="pq-breadcrumb-container">
                         <ol class="breadcrumb">
@@ -42,7 +39,7 @@
             <div class="col-xl-8 mt-4 mt-xl-0">
                 <img src="{{ static_asset('front-assets/assets/images/adult-eye-checkup.jpg') }}" class="pq-mb-30 img-fluid" alt="Adult Eye Checkup in Dubai by Dr. Medha Sharma">
 
-                <h1 class="mb-2">Adult Eye Checkup in Dubai – Comprehensive Eye Examination by Specialist Ophthalmologist</h1>
+                <h2 class="mb-2">Adult Eye Checkup in Dubai – Comprehensive Eye Examination by Specialist Ophthalmologist</h2>
 
                 <p style="text-align: justify;">
                     Maintaining healthy vision is essential for everyday activities, work performance, and overall quality of life. Regular eye examinations help detect vision problems and eye diseases at an early stage. At Vision for Children Clinic in Dubai, Dr. Medha Sharma, an <strong><a href="https://drmedhasharma.com/eye-specialist-doctor-in-dubai">Eye Specialist Doctor in Dubai</a></strong>, provides comprehensive adult eye checkups using advanced diagnostic technology to evaluate vision, eye health, and potential eye conditions.

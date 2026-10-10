@@ -1,15 +1,7 @@
 @extends('frontend.layout.app')
-@section('title', 'Eye Specialist in Dubai- Dr Medha Sharma : Eye Specialist Dubai | Paediatric Ophthalmologist')
-@section('meta_description',
-'Consult Dr. Medha Sharma, a leading Eye Specialist and Paediatric Ophthalmologist in
-Dubai. Expert in treating strabismus, lazy eye, cataract, and all pediatric vision disorders with advanced care and
-compassion.')
-@section('meta_keywords',
-'Dr Medha Sharma, Eye Specialist Dubai, Paediatric Ophthalmologist Dubai, Strabismus
-Treatment, Lazy Eye Treatment, Children Eye Doctor Dubai, Pediatric Eye Specialist, Eye Clinic Dubai, Best Eye Doctor
-Dubai')
+@section('title', 'Eye Specialist in Dubai | Dr. Medha Sharma | Vision 4 Children')
+@section('meta_description', 'Need an Eye Specialist in Dubai? Dr. Medha Sharma at Vision 4 Children offers expert eye care for children and adults, focused on safety, trust, and kind care')
 @section('meta_robots', 'index, follow')
-@section('canonical', url('https://drmedhasharma.com/'))
 @section('content')
 
 
@@ -21,7 +13,7 @@ Dubai')
             <div class="col-lg-8">
                 <nav aria-label="breadcrumb">
                     <div class="pq-breadcrumb-title">
-                        <h2>Eye Specialist in Dubai</h2>
+                        <h1>Eye Specialist in Dubai</h1>
                     </div>
                     <div class="pq-breadcrumb-container">
                         <ol class="breadcrumb">
@@ -46,7 +38,7 @@ Dubai')
 
             <div class="col-xl-8 mt-4 mt-xl-0">
                 <img src="{{ static_asset('front-assets/assets/images/eye-specialist-in-dubai.jpg')}}" class="pq-mb-30 img-fluid" alt="">
-                <h3 class="mb-2">Eye Specialist in Dubai</h3>
+                <h2 class="mb-2">Eye Specialist in Dubai</h2>
                 <p style="text-align: justify;">
                     Welcome to the best Dubai eye care, where our highly qualified and experienced professionals look after all the eye disorders using the most advanced medical technology. Our clinic, led by Dr. Medha Sharma, a highly trusted<strong> Ophthalmologist in Dubai </strong>committed to helping children see the world clearly and with confidence. We are trusted as the best <strong> eye specialists in Dubai,</strong> offering eye care from routine checkups to advanced treatments, and we make it all fun, reassuring, and safe for the little ones because good vision is the foundation of a bright future.
                 </p>

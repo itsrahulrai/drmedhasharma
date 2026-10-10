@@ -1,15 +1,7 @@
 @extends('frontend.layout.app')
-@section('title', 'Blog - Dr Medha Sharma : Eye Specialist Dubai | Paediatric Ophthalmologist')
-@section('meta_description',
-    'Consult Dr. Medha Sharma, a leading Eye Specialist and Paediatric Ophthalmologist in
-    Dubai. Expert in treating strabismus, lazy eye, cataract, and all pediatric vision disorders with advanced care and
-    compassion.')
-@section('meta_keywords',
-    'Dr Medha Sharma, Eye Specialist Dubai, Paediatric Ophthalmologist Dubai, Strabismus
-    Treatment, Lazy Eye Treatment, Children Eye Doctor Dubai, Pediatric Eye Specialist, Eye Clinic Dubai, Best Eye Doctor
-    Dubai')
+@section('title', 'Eye Care Blog | Dr. Medha Sharma | Vision 4 Children')
+@section('meta_description', 'Explore expert eye care insights by Dr. Medha Sharma, with helpful articles on eye health, vision, conditions, treatments, and practical eye care.')
 @section('meta_robots', 'index, follow')
-@section('canonical', url('https://drmedhasharma.com/'))
 @section('content')
 
 
@@ -104,6 +96,14 @@
                                 </div>
                             @endforelse
                         </div>
+
+                        @if ($blogs->hasPages())
+                            <div class="row mt-5">
+                                <div class="col-12 d-flex justify-content-center">
+                                    {{ $blogs->links() }}
+                                </div>
+                            </div>
+                        @endif
 
                     </div>
                 </div>

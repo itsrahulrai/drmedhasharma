@@ -2,10 +2,7 @@
 @section('title', 'Best Pediatric Ophthalmologist in Dubai | Dr. Medha Sharma')
 @section('meta_description',
 'Consult the best pediatric ophthalmologist in Dubai. Dr. Medha Sharma provides expert diagnosis and treatment for children\'s eye conditions.')
-@section('meta_keywords',
-'Eye Specialist, Ophthalmologist, Eye Specialist Doctor, Adult Eye Checkup, Cornea Specialist, Corneal Crosslinking Treatments, Keratoconus Treatment, Amblyopia Treatment, Best Pediatric Ophthalmologist, Lazy Eye Treatment, Strabismus Surgery, Squint Specialist, Eye Specialist for Kids')
 @section('meta_robots', 'index, follow')
-@section('canonical', url('https://drmedhasharma.com/pediatric-ophthalmologist-in-dubai'))
 @section('content')
 
 
@@ -17,7 +14,7 @@
             <div class="col-lg-8">
                 <nav aria-label="breadcrumb">
                     <div class="pq-breadcrumb-title">
-                        <h2>Pediatric Ophthalmologist in Dubai</h2>
+                        <h1>Pediatric Ophthalmologist in Dubai</h1>
                     </div>
                     <div class="pq-breadcrumb-container">
                         <ol class="breadcrumb">
@@ -43,7 +40,7 @@
             <div class="col-xl-8 mt-4 mt-xl-0">
                 <img src="{{ static_asset('front-assets/assets/images/best-pediatric-ophthalmologist-in-dubai-childrens-eye-care.webp') }}" class="pq-mb-30 img-fluid" alt="Best Pediatric Ophthalmologist in Dubai for Children's Eye Care">
 
-                <h1 class="mb-2">Best Pediatric Ophthalmologist in Dubai for Children's Eye Care</h1>
+                <h2 class="mb-2">Best Pediatric Ophthalmologist in Dubai for Children's Eye Care</h2>
 
                 <p style="text-align: justify;">
                     Healthy vision plays an important role in the proper growth of a child at all developmental stages. Whether it comes to facial recognition and studying at school, or playing, reading, and discovering the world around, good vision will definitely help with the development of a kid and improve his/her confidence. As a child's visual system continues to develop during the early years, even minor eye conditions can interfere with normal vision if left undiagnosed.

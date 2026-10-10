@@ -2,10 +2,7 @@
 @section('title', 'Eye Specialist Doctor in Dubai | Dr. Medha Sharma')
 @section('meta_description',
 'Consult an experienced Eye Specialist Doctor in Dubai. Dr. Medha Sharma provides comprehensive eye examinations, diagnosis, and personalised treatment for children and adults.')
-@section('meta_keywords',
-'Dr Medha Sharma, Eye Specialist Dubai, Paediatric Ophthalmologist Dubai, Strabismus Treatment, Lazy Eye Treatment, Children Eye Doctor Dubai, Pediatric Eye Specialist, Eye Clinic Dubai, Best Eye Doctor Dubai')
 @section('meta_robots', 'index, follow')
-@section('canonical', url('https://drmedhasharma.com/eye-specialist-doctor-in-dubai'))
 @section('content')
 
 
@@ -17,7 +14,7 @@
             <div class="col-lg-8">
                 <nav aria-label="breadcrumb">
                     <div class="pq-breadcrumb-title">
-                        <h2>Eye Specialist Doctor in Dubai</h2>
+                        <h1>Eye Specialist Doctor in Dubai</h1>
                     </div>
                     <div class="pq-breadcrumb-container">
                         <ol class="breadcrumb">
@@ -44,7 +41,7 @@
                 
                 <img src="{{ static_asset('front-assets/assets/images/eye-specialist-doctor-in-dubai.webp') }}" class="pq-mb-30 img-fluid" alt="Eye Specialist Doctor in Dubai | Advanced Eye Care for Healthy Vision">
 
-                <h1 class="mb-2">Eye Specialist Doctor in Dubai | Advanced Eye Care for Healthy Vision</h1>
+                <h2 class="mb-2">Eye Specialist Doctor in Dubai | Advanced Eye Care for Healthy Vision</h2>
 
                 <p style="text-align: justify;">
                     The eyes allow you to see the world around you; hence, it is imperative to have clear vision when it comes to your career, education, and general activities. However, most of the eye disorders take time to occur, and symptoms can only be noted when they have impacted the way your vision works. If you experience poor eyesight, eye pain, dryness, redness, or want to know if your eyes are healthy, the best thing would be to see an <strong>eye specialist doctor in Dubai</strong>.

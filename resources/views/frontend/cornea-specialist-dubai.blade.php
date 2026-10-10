@@ -2,10 +2,7 @@
 @section('title', 'Cornea Specialist in Dubai | Dr. Medha Sharma')
 @section('meta_description',
 'Consult a trusted cornea specialist in Dubai. Dr. Medha Sharma offers advanced diagnosis, corneal treatments, and corneal crosslinking for better eye health.')
-@section('meta_keywords',
-'Eye Specialist, Ophthalmologist, Eye Specialist Doctor, Adult Eye Checkup, Cornea Specialist, Corneal Crosslinking Treatments, Keratoconus Treatment, Amblyopia Treatment, Best Pediatric Ophthalmologist, Lazy Eye Treatment, Strabismus Surgery, Squint Specialist, Eye Specialist for Kids')
 @section('meta_robots', 'index, follow')
-@section('canonical', url('https://drmedhasharma.com/cornea-specialist-dubai'))
 @section('content')
 
 
@@ -17,7 +14,7 @@
             <div class="col-lg-8">
                 <nav aria-label="breadcrumb">
                     <div class="pq-breadcrumb-title">
-                        <h2>Cornea Specialist in Dubai</h2>
+                        <h1>Cornea Specialist in Dubai</h1>
                     </div>
                     <div class="pq-breadcrumb-container">
                         <ol class="breadcrumb">
@@ -43,7 +40,7 @@
                 
                 <img src="{{ static_asset('front-assets/assets/images/cornea-specialist-dubai.webp') }}" class="pq-mb-30 img-fluid" alt="Cornea Specialist Dubai | Advanced Corneal Care & Corneal Crosslinking Treatments in Dubai">
 
-                <h1 class="mb-2">Cornea Specialist Dubai | Advanced Corneal Care &amp; Corneal Crosslinking Treatments in Dubai</h1>
+                <h2 class="mb-2">Cornea Specialist Dubai | Advanced Corneal Care &amp; Corneal Crosslinking Treatments in Dubai</h2>
 
                 <p style="text-align: justify;">
                     Having clear eyesight requires having a healthy Cornea that helps to focus light in order to achieve good eyesight and clear vision. If the cornea becomes infected, thins, or is damaged, performing tasks such as reading and watching television can become difficult. Seeking the services of a professional <strong>cornea specialist Dubai</strong> may be a great way of ensuring that the eyes remain healthy.
